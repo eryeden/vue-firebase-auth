@@ -13,7 +13,6 @@
 <script>
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
-
 export default {
     name: 'Signup',
     data() {

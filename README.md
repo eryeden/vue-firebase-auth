@@ -1,5 +1,5 @@
 # vue-firebase-auth
-I am proceeding to the next phase, where I will develop a web application using Vue.js and Firebase authentication.
+This repository is the next phase of web app prototyping, where I will develop a web application using Vue.js and Firebase authentication.
 The application will encompass the following features:
 - The system will include these pages:
   - Top page
@@ -33,11 +33,12 @@ See [LICENSE](./LICENSE)
 ## Acknowledgements
 - chatgpt: He did a grate work and support for this project.
 
-
 ## Project memo
 
 ### Envrionment setup
 ```bash
-yarn global add @vue/cli
-yarn create vite my-vue-app --template vue
+npm init vue@latest
+cd vue-firebase-auth/
+npm install
+npm i firebase
 ```
