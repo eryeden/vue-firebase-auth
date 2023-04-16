@@ -4,14 +4,14 @@
     <h3>Name: {{ name }}</h3>
     <h3>Photo: {{ photoURL }}</h3>
     <h3>UserID: {{ id }}</h3>
-    <h3>Email: {{ email }}</h3>
+    <h3>Email: {{ email }}</h3> <button @click="send_verification_email">Verify</button>
     <h3>IsVerified: {{ is_email_verified }}</h3>
     <br />
     <button @click="signOut">Sign out</button>
 </template>
   
 <script>
-import { getAuth, signOut } from "firebase/auth";
+import { getAuth, signOut, sendEmailVerification } from "firebase/auth";
 
 export default {
 
@@ -35,6 +35,15 @@ export default {
                 // An error happened.
                 alert("Failed to sign out: " + error.message)
             });
+        },
+        send_verification_email() {
+            const auth = getAuth();
+            sendEmailVerification(auth.currentUser)
+                .then(() => {
+                    // Email verification sent!
+                    // ...
+                    alert("Verification email sent!")
+                });
         }
     },
     mounted: function () {
