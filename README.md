@@ -22,10 +22,10 @@ The application will encompass the following features:
 See the [instructions](./vue-firebase-auth/README.md)
 
 ## Testing
-Explain how to run the automated tests for the project.
+See the [instructions](./vue-firebase-auth/README.md)
 
 ## Deployment
-Instructions on how to deploy the project to a live system.
+Currently, live deployment is not supported.
 
 ## License
 See [LICENSE](./LICENSE)
@@ -33,7 +33,7 @@ See [LICENSE](./LICENSE)
 ## Acknowledgements
 - chatgpt: He did a grate work and support for this project.
 
-## Project memo
+## Project note
 
 ### Envrionment setup
 ```bash
