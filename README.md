@@ -35,6 +35,16 @@ See [LICENSE](./LICENSE)
 
 ## Project note
 
+### nodejs setup
+You can refer to the instruction [here](https://github.com/nodesource/distributions).
+Node 18 is used in this project.
+
+- Node.js v18.x:
+```bash
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
+```
+
 ### Envrionment setup
 ```bash
 npm init vue@latest
